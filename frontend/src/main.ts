@@ -50,7 +50,12 @@ const getTeams = async (teamName = "") => {
 //----------------------------------------Mutation-----------------------------------------------------------------------//
 //----------------------------------------Render-----------------------------------------------------------------------// 
 
-const renderTeams = (teams:Team[]) => {
+const renderTeams = () => {
+  if (!teams.length) {
+    (document.getElementById("teams") as HTMLDivElement).innerHTML = '<h1 class="font-bold text-xl">There is no such team</h1>'
+    return
+  }
+
   const container = document.getElementById("teams")!
   container.innerHTML = ""
 
@@ -59,7 +64,7 @@ const renderTeams = (teams:Team[]) => {
     <div class="card w-96 bg-base-100 shadow-xl">
       <div class="card-body">
         <h2 class="card-title">${team.name}</h2>
-        <ul class="menu menu-vertical lg:menu-horizontal  rounded-box">
+        <ul class="menu menu-vertical  rounded-box">
           ${renderPlayers(team.players)}
         </ul>
       </div>
@@ -89,12 +94,13 @@ const init = async () => {
   await getTeams();
   
   if (teams.length){
-    renderTeams(teams)
+    renderTeams()
   }
-  
+
   (document.getElementById("search") as HTMLInputElement).addEventListener("click", async () => {
     await getTeams(teamNameInput.value)
-    renderTeams(teams)
+
+    renderTeams()
   })
 
 }
