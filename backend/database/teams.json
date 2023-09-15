@@ -1,0 +1,54 @@
+[
+  {
+    "id": 583674,
+    "name": "Los Angeles Lakers",
+    "players": [
+      { "id": 3455, "name": "Lebron James" },
+      { "id": 6766, "name": "Anthony Davis" },
+      { "id": 2533, "name": "Rui Hachimura" },
+      { "id": 2344, "name": "Austin Reaves" }
+    ]
+  },
+  {
+    "id": 387465,
+    "name": "Los Angele Clippers",
+    "players": [
+      { "id": 8543, "name": "Kawhi Leonard" },
+      { "id": 1929, "name": "Paul George" },
+      { "id": 2232, "name": "Ivica Zubac" }
+    ]
+  },
+  {
+    "id": 732938,
+    "name": "Golden State Warriors",
+    "players": [
+      { "id": 2004, "name": "Steph Curry" },
+      { "id": 8083, "name": "Klay Thompson" },
+      { "id": 6334, "name": "Draymond Green" },
+      { "id": 8777, "name": "Chris Paul" }
+    ]
+  },
+  {
+    "id": 847652,
+    "name": "Sacramento Kings",
+    "players": [
+      { "id": 1223, "name": "Domantas Sabonis" }
+    ]
+  },
+  {
+    "id": 192837,
+    "name": "Houston Rockets",
+    "players": [
+      
+    ]
+  },
+  {
+    "id": 842361,
+    "name": "Phoenix Suns",
+    "players": [
+      { "id": 1188, "name": "Kevin Durant" },
+      { "id": 7332, "name": "Devin Booker" },
+      { "id": 1090, "name": "Bradley Beal" }
+    ]
+  }
+]
